@@ -6727,7 +6727,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = linphone;
+				TEST_TARGET_NAME = miedifi;
 			};
 			name = Debug;
 		};
@@ -6774,7 +6774,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = linphone;
+				TEST_TARGET_NAME = miedifi;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -6822,7 +6822,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = linphone;
+				TEST_TARGET_NAME = miedifi;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Distribution;
@@ -6870,7 +6870,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = linphone;
+				TEST_TARGET_NAME = miedifi;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = DistributionAdhoc;
