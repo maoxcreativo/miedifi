@@ -1,0 +1,94 @@
+
+Showing Recent Messages
+
+Prepare build
+
+ComputeTargetDependencyGraph
+
+note: Building targets in dependency order
+note: Target dependency graph (15 targets)
+    Target 'linphone' in project 'linphone'
+        ➜ Explicit dependency on target 'msgNotificationService' in project 'linphone'
+        ➜ Explicit dependency on target 'msgNotificationContent' in project 'linphone'
+        ➜ Explicit dependency on target 'linphoneExtension' in project 'linphone'
+        ➜ Implicit dependency on target 'Pods-linphone' in project 'Pods' via file 'Pods_linphone.framework' in build phase 'Link Binary'
+        ➜ Implicit dependency on target 'DropDown' in project 'Pods' via options '-framework DropDown' in build setting 'OTHER_LDFLAGS'
+        ➜ Implicit dependency on target 'EmojiPicker' in project 'Pods' via options '-framework EmojiPicker' in build setting 'OTHER_LDFLAGS'
+        ➜ Implicit dependency on target 'IQKeyboardManager' in project 'Pods' via options '-framework IQKeyboardManager' in build setting 'OTHER_LDFLAGS'
+        ➜ Implicit dependency on target 'SVProgressHUD' in project 'Pods' via options '-framework SVProgressHUD' in build setting 'OTHER_LDFLAGS'
+        ➜ Implicit dependency on target 'SnapKit' in project 'Pods' via options '-framework SnapKit' in build setting 'OTHER_LDFLAGS'
+        ➜ Implicit dependency on target 'SwipeCellKit' in project 'Pods' via options '-framework SwipeCellKit' in build setting 'OTHER_LDFLAGS'
+        ➜ Implicit dependency on target 'linphone-sdk' in project 'Pods' via options '-framework linphonesw' in build setting 'OTHER_LDFLAGS'
+    Target 'Pods-linphone' in project 'Pods'
+        ➜ Explicit dependency on target 'DropDown' in project 'Pods'
+        ➜ Explicit dependency on target 'EmojiPicker' in project 'Pods'
+        ➜ Explicit dependency on target 'IQKeyboardManager' in project 'Pods'
+        ➜ Explicit dependency on target 'SVProgressHUD' in project 'Pods'
+        ➜ Explicit dependency on target 'SnapKit' in project 'Pods'
+        ➜ Explicit dependency on target 'SwipeCellKit' in project 'Pods'
+        ➜ Explicit dependency on target 'linphone-sdk' in project 'Pods'
+    Target 'SwipeCellKit' in project 'Pods' (no dependencies)
+    Target 'SnapKit' in project 'Pods' (no dependencies)
+    Target 'SVProgressHUD' in project 'Pods' (no dependencies)
+    Target 'IQKeyboardManager' in project 'Pods' (no dependencies)
+    Target 'EmojiPicker' in project 'Pods'
+        ➜ Explicit dependency on target 'EmojiPicker-Resources' in project 'Pods'
+    Target 'EmojiPicker-Resources' in project 'Pods' (no dependencies)
+    Target 'DropDown' in project 'Pods' (no dependencies)
+    Target 'linphoneExtension' in project 'linphone' (no dependencies)
+    Target 'msgNotificationContent' in project 'linphone'
+        ➜ Implicit dependency on target 'Pods-msgNotificationContent' in project 'Pods' via file 'Pods_msgNotificationContent.framework' in build phase 'Link Binary'
+        ➜ Implicit dependency on target 'linphone-sdk' in project 'Pods' via options '-framework linphonesw' in build setting 'OTHER_LDFLAGS'
+    Target 'Pods-msgNotificationContent' in project 'Pods'
+        ➜ Explicit dependency on target 'linphone-sdk' in project 'Pods'
+    Target 'msgNotificationService' in project 'linphone'
+        ➜ Implicit dependency on target 'Pods-msgNotificationService' in project 'Pods' via file 'Pods_msgNotificationService.framework' in build phase 'Link Binary'
+        ➜ Implicit dependency on target 'linphone-sdk' in project 'Pods' via options '-framework linphonesw' in build setting 'OTHER_LDFLAGS'
+    Target 'Pods-msgNotificationService' in project 'Pods'
+        ➜ Explicit dependency on target 'linphone-sdk' in project 'Pods'
+    Target 'linphone-sdk' in project 'Pods' (no dependencies)
+
+Building targets in dependency order
+
+Target dependency graph (15 targets)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+Build description signature: 6c060693acc8d1fff6b1b56a51938c7c
+Build description path: /Users/mauricio_ocampo/Library/Developer/Xcode/DerivedData/linphone-eeohfgxumfloxlemkqijsxaorvpy/Build/Intermediates.noindex/XCBuildData/6c060693acc8d1fff6b1b56a51938c7c.xcbuilddata
+
+
+Analyze target msgNotificationContent of project linphone with configuration Debug
+warning: Run script build phase 'Run Script' will be run during every build because it does not specify any outputs. To address this warning, either add output dependencies to the script phase, or configure it to run in every build by unchecking "Based on dependency analysis" in the script phase. (in target 'msgNotificationContent' from project 'linphone')
+
+
+Run script build phase 'Run Script' will be run during every build because it does not specify any outputs. To address this warning, either add output dependencies to the script phase, or configure it to run in every build by unchecking "Based on dependency analysis" in the script phase.
+
+
+Analyze target linphone of project linphone with configuration Debug
+warning: Run script build phase 'Run Script' will be run during every build because it does not specify any outputs. To address this warning, either add output dependencies to the script phase, or configure it to run in every build by unchecking "Based on dependency analysis" in the script phase. (in target 'linphone' from project 'linphone')
+warning: Run script build phase 'Run Script' will be run during every build because it does not specify any outputs. To address this warning, either add output dependencies to the script phase, or configure it to run in every build by unchecking "Based on dependency analysis" in the script phase. (in target 'linphone' from project 'linphone')
+
+
+Run script build phase 'Run Script' will be run during every build because it does not specify any outputs. To address this warning, either add output dependencies to the script phase, or configure it to run in every build by unchecking "Based on dependency analysis" in the script phase.
+
+Run script build phase 'Run Script' will be run during every build because it does not specify any outputs. To address this warning, either add output dependencies to the script phase, or configure it to run in every build by unchecking "Based on dependency analysis" in the script phase.
+
+
+Analyze target msgNotificationService of project linphone with configuration Debug
+/Users/mauricio_ocampo/Documents/miedifi/miedifi/linphone.xcodeproj: error: Automatic signing failed: Xcode failed to provision this target. Please file a bug report at <https://feedbackassistant.apple.com> and include the Update Signing report from the Report navigator. (in target 'msgNotificationService' from project 'linphone')
+/Users/mauricio_ocampo/Documents/miedifi/miedifi/linphone.xcodeproj: error: Provisioning profile "iOS Team Provisioning Profile: org.miedifi.phone.msgNotificationService" doesn't include the com.apple.developer.usernotifications.filtering entitlement. (in target 'msgNotificationService' from project 'linphone')
+warning: Run script build phase 'Run Script' will be run during every build because it does not specify any outputs. To address this warning, either add output dependencies to the script phase, or configure it to run in every build by unchecking "Based on dependency analysis" in the script phase. (in target 'msgNotificationService' from project 'linphone')
+
+
+/Users/mauricio_ocampo/Documents/miedifi/miedifi/linphone.xcodeproj: Automatic signing failed: Xcode failed to provision this target. Please file a bug report at <https://feedbackassistant.apple.com> and include the Update Signing report from the Report navigator.
+
+/Users/mauricio_ocampo/Documents/miedifi/miedifi/linphone.xcodeproj: Provisioning profile "iOS Team Provisioning Profile: org.miedifi.phone.msgNotificationService" doesn't include the com.apple.developer.usernotifications.filtering entitlement.
+
+Run script build phase 'Run Script' will be run during every build because it does not specify any outputs. To address this warning, either add output dependencies to the script phase, or configure it to run in every build by unchecking "Based on dependency analysis" in the script phase.
+
+
+
+Build failed    28/09/23, 2:19 PM    19.1 seconds
