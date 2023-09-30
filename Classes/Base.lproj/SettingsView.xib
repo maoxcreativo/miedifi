@@ -73,13 +73,14 @@
             <nil key="simulatedStatusBarMetrics"/>
             <nil key="simulatedTopBarMetrics"/>
             <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" barStyle="black" translucent="NO" id="11" userLabel="navigationBar" customClass="UINavigationBarEx">
-                <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                 <autoresizingMask key="autoresizingMask"/>
             </navigationBar>
+            <point key="canvasLocation" x="-379" y="-472"/>
         </navigationController>
         <viewController autoresizesArchivedViewToFullSize="NO" id="6" userLabel="settingsController" customClass="IASKAppSettingsViewControllerEx">
             <extendedEdge key="edgesForExtendedLayout"/>
             <navigationItem key="navigationItem" id="14" userLabel="settingsItem"/>
+            <point key="canvasLocation" x="-695" y="-1119"/>
         </viewController>
     </objects>
     <resources>
