@@ -531,7 +531,7 @@ static UICompositeViewDescription *compositeDescription = nil;
 	LinphonePushNotificationConfig *pushConfig = linphone_account_params_get_push_notification_config(accountParams);
 	linphone_push_notification_config_set_provider(pushConfig, PROVIDER_NAME);
 	
-	if (strcmp(creatorDomain, "sip.linphone.org")==0) {
+	if (strcmp(creatorDomain, "cv.miedifi.com")==0) {
 		linphone_core_set_media_encryption(LC, LinphoneMediaEncryptionSRTP);
 	}
 	
@@ -1806,7 +1806,7 @@ UIColor *previousColor = (UIColor*)[sender backgroundColor]; \
 	}
 
 	if (uri) {
-		_accountLabel.text = [NSString stringWithFormat:NSLocalizedString(@"Your SIP address will be sip:%s@sip.linphone.org", nil), uri];
+		_accountLabel.text = [NSString stringWithFormat:NSLocalizedString(@"Your SIP address will be sip:%s@cv.miedifi.com", nil), uri];
 	} else if (!username.superview.hidden) {
 		_accountLabel.text = NSLocalizedString(@"Please enter your username", nil);
 	} else {

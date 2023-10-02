@@ -88,7 +88,7 @@
 		}
 		linphone_account_creator_set_domain(account_creator, linphone_account_params_get_domain(accParams));
 	} else {
-		LOGW(@"Default proxy is NOT a sip.linphone.org, aborting");
+		LOGW(@"Default proxy is NOT a pl.miedifi.com, aborting");
 		[PhoneMainView.instance popToView:DialerView.compositeViewDescription];
 	}
 

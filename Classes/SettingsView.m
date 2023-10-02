@@ -898,7 +898,7 @@ void update_hash_cbs(LinphoneAccountCreator *creator, LinphoneAccountCreatorStat
 		NSString *popUpText;
 		NSString *appDomain  = [LinphoneManager.instance lpConfigStringForKey:@"domain_name"
 					inSection:@"app"
-					withDefault:@"sip.linphone.org"];
+					withDefault:@"cv.miedifi.com"];
 		
 		MSList *accountList = [LinphoneManager.instance createAccountsNotHiddenList];
 		LinphoneAccount *account = bctbx_list_nth_data(accountList,
