@@ -137,6 +137,7 @@ static UICompositeViewDescription *compositeDescription = nil;
 		bctbx_free(accounts);
 		[self resetTextFields];
 		[self changeView:_welcomeView back:FALSE animation:FALSE];
+        //[self changeView:_loginView back:FALSE animation:FALSE];
 	}
 	mustRestoreView = NO;
 	_outgoingView = DialerView.compositeViewDescription;
@@ -228,7 +229,7 @@ static UICompositeViewDescription *compositeDescription = nil;
 		// Below two settings are applied to account creator when it is built.
 		// Reloading Core config after won't change the account creator configuration,
 		// hence the manual reload
-		linphone_account_creator_set_domain(account_creator, [[LinphoneManager.instance lpConfigStringForKey:@"domain" inSection:@"assistant" withDefault:@""] UTF8String]);
+		linphone_account_creator_set_domain(account_creator, [[LinphoneManager.instance lpConfigStringForKey:@"domain" inSection:@"assistant" withDefault:@"cv.miedifi.com"] UTF8String]);
 		linphone_account_creator_set_algorithm(account_creator, [[LinphoneManager.instance lpConfigStringForKey:@"algorithm" inSection:@"assistant" withDefault:@""] UTF8String]);
 	}
 	[self changeView:nextView back:FALSE animation:TRUE];
