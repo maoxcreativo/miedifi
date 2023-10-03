@@ -1905,6 +1905,8 @@
 		9CF65F1FFB9248C23F5D6BAB /* Pods_msgNotificationService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_msgNotificationService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9F2BFC02ACBB33D00C60341 /* es_AR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es_AR; path = es_AR.lproj/PhoneMainView.strings; sourceTree = "<group>"; };
 		A9F2BFC22ACBB34200C60341 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/PhoneMainView.strings; sourceTree = "<group>"; };
+		A9F2BFC32ACBBE3300C60341 /* es_AR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es_AR; path = es_AR.lproj/FirstLoginView.strings; sourceTree = "<group>"; };
+		A9F2BFC42ACBBE3700C60341 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/FirstLoginView.strings; sourceTree = "<group>"; };
 		AD17C070E535485A6FED4014 /* Pods-msgNotificationContent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-msgNotificationContent.release.xcconfig"; path = "Target Support Files/Pods-msgNotificationContent/Pods-msgNotificationContent.release.xcconfig"; sourceTree = "<group>"; };
 		C2DA650EC2F49D42B95FBE2B /* Pods_linphone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_linphone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5E27220032F0F5B6F1FDFFC /* Pods-CallUITests.distributionadhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CallUITests.distributionadhoc.xcconfig"; path = "Target Support Files/Pods-CallUITests/Pods-CallUITests.distributionadhoc.xcconfig"; sourceTree = "<group>"; };
@@ -5710,6 +5712,8 @@
 				639E9C941C0DB7BE00019A75 /* Base */,
 				8CBD7BC120B6B87600E5DCC0 /* fr */,
 				6187B1C724B3271C00D580FB /* hu */,
+				A9F2BFC32ACBBE3300C60341 /* es_AR */,
+				A9F2BFC42ACBBE3700C60341 /* es */,
 			);
 			name = FirstLoginView.xib;
 			sourceTree = "<group>";
