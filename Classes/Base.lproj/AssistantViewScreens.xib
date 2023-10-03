@@ -99,27 +99,6 @@
                         <constraint firstAttribute="height" constant="58" id="zjY-mm-MaQ"/>
                     </constraints>
                 </view>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="36" userLabel="createAccountButton" customClass="UIRoundBorderedButton">
-                    <rect key="frame" x="40" y="153" width="299" height="40"/>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <accessibility key="accessibilityConfiguration" label="Create account">
-                        <bool key="isElement" value="YES"/>
-                    </accessibility>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="40" id="qdu-b3-MtX"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                    <state key="normal" title="CREATE ACCOUNT">
-                        <color key="titleColor" systemColor="labelColor"/>
-                    </state>
-                    <state key="disabled">
-                        <color key="titleColor" systemColor="systemGray2Color"/>
-                    </state>
-                    <state key="highlighted" backgroundImage="color_F.png"/>
-                    <connections>
-                        <action selector="onGotoCreateAccountClick:" destination="-1" eventType="touchUpInside" id="Meo-Hq-8td"/>
-                    </connections>
-                </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="38" userLabel="linphoneLoginButton" customClass="UIRoundBorderedButton">
                     <rect key="frame" x="40" y="227" width="299" height="40"/>
                     <accessibility key="accessibilityConfiguration" identifier="assistant_view_linphone_login" label="Use Linphone account">
@@ -186,6 +165,27 @@
                         <action selector="onGotoRemoteProvisioningClick:" destination="-1" eventType="touchUpInside" id="cAo-3u-yUT"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="36" userLabel="createAccountButton" customClass="UIRoundBorderedButton">
+                    <rect key="frame" x="36" y="160" width="299" height="40"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <accessibility key="accessibilityConfiguration" label="Create account">
+                        <bool key="isElement" value="YES"/>
+                    </accessibility>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="qdu-b3-MtX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="CREATE ACCOUNT">
+                        <color key="titleColor" systemColor="labelColor"/>
+                    </state>
+                    <state key="disabled">
+                        <color key="titleColor" systemColor="systemGray2Color"/>
+                    </state>
+                    <state key="highlighted" backgroundImage="color_F.png"/>
+                    <connections>
+                        <action selector="onGotoCreateAccountClick:" destination="-1" eventType="touchUpInside" id="Meo-Hq-8td"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
             <accessibility key="accessibilityConfiguration" identifier="assistant_view"/>
@@ -216,7 +216,7 @@
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="202.40000000000001" y="188.90554722638683"/>
+            <point key="canvasLocation" x="-210" y="218"/>
         </view>
         <view contentMode="scaleToFill" id="44" userLabel="createAccountView">
             <rect key="frame" x="0.0" y="0.0" width="375" height="739"/>
@@ -1436,7 +1436,7 @@ Once it is done, come back here and click on the button.</string>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="1917.5" y="149.5"/>
+            <point key="canvasLocation" x="-172" y="631"/>
         </view>
         <view contentMode="scaleToFill" id="xVK-hL-6pe" userLabel="remoteProvisioningLoginView">
             <rect key="frame" x="0.0" y="0.0" width="375" height="379"/>

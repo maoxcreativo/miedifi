@@ -21,13 +21,13 @@ use_callkit=1
 use_in_app_file_viewer_for_non_encrypted_files=0
 unexpected_pushkit=0
 force_lime_chat_rooms=0
-disable_chat_feature=0
+disable_chat_feature=1
 disable_video_feature=0
 
-enable_native_address_book=1
+enable_native_address_book=0
 read_only_native_address_book=0
 only_show_sip_contacts_list=0
-hide_sip_contacts_list=0
+hide_sip_contacts_list=1
 
 [in_app_purchase]
 #set to 1 if in-app purchases are to be shown in the application
@@ -80,7 +80,7 @@ video_rtp_port=9200-9299
 
 [sip]
 update_presence_model_timestamp_before_publish_expires_refresh=1
-contact="Linphone iPhone" <sip:linphone.iphone@unknown-host>
+contact="miedifi iPhone" <sip:miedifi.iphone@unknown-host>
 guess_hostname=1
 inc_timeout=45
 keepalive_period=30000

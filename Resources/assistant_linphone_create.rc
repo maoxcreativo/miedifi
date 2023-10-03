@@ -7,11 +7,11 @@
 		<entry name="publish" overwrite="true">1</entry>
 		<entry name="publish_expires" overwrite="true">120</entry>
 		<entry name="quality_reporting_collector" overwrite="true">sip:voip-metrics@cv.miedifi.com;transport=tls</entry>
-		<entry name="quality_reporting_enabled" overwrite="true">1</entry>
+		<entry name="quality_reporting_enabled" overwrite="false">1</entry>
 		<entry name="quality_reporting_interval" overwrite="true">180</entry>
 		<entry name="reg_expires" overwrite="true">31536000</entry>
 		<entry name="reg_identity" overwrite="true">sip:?@cv.miedifi.com</entry>
-		<entry name="reg_proxy" overwrite="true">&lt;sip:cv.miedifi.com;transport=tls&gt;</entry>
+		<entry name="reg_proxy" overwrite="true">&lt;sip:pl.miedifi.com;transport=udp&gt;</entry>
 		<entry name="reg_sendregister" overwrite="true">1</entry>
 		<entry name="realm" overwrite="true">cv.miedifi.com</entry>
 		<entry name="nat_policy_ref" overwrite="true">nat_policy_default_values</entry>
