@@ -6104,7 +6104,7 @@
 					"-DLINPHONE_SDK_VERSION=\\\"5.3.0-alpha.173+990473d73\\\"",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = org.miedifi.phone;
+				PRODUCT_BUNDLE_IDENTIFIER = org.miedifi2.phone;
 				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)app";
 				PRODUCT_NAME = miedifi;
 				PROVISIONING_PROFILE = "";
@@ -6235,7 +6235,7 @@
 					"-DLINPHONE_SDK_VERSION=\\\"5.3.0-alpha.173+990473d73\\\"",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = org.miedifi.phone;
+				PRODUCT_BUNDLE_IDENTIFIER = org.miedifi2.phone;
 				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)app";
 				PRODUCT_NAME = miedifi;
 				PROVISIONING_PROFILE = "";
@@ -6365,7 +6365,7 @@
 					"-DLINPHONE_SDK_VERSION=\\\"5.3.0-alpha.173+990473d73\\\"",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = org.miedifi.phone;
+				PRODUCT_BUNDLE_IDENTIFIER = org.miedifi2.phone;
 				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)app";
 				PRODUCT_NAME = miedifi;
 				PROVISIONING_PROFILE = "";
@@ -6494,7 +6494,7 @@
 					"-DLINPHONE_SDK_VERSION=\\\"5.3.0-alpha.173+990473d73\\\"",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = org.miedifi.phone;
+				PRODUCT_BUNDLE_IDENTIFIER = org.miedifi2.phone;
 				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)app";
 				PRODUCT_NAME = miedifi;
 				PROVISIONING_PROFILE = "";
