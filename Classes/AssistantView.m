@@ -99,7 +99,7 @@ static UICompositeViewDescription *compositeDescription = nil;
 #pragma mark - ViewController Functions
 
 - (IBAction)onContactTap {
-	NSString *url = @"https://www.linphone.org/contact";
+	NSString *url = @"https://www.miedifi.com/contact";
 	if (![UIApplication.sharedApplication openURL:[NSURL URLWithString:url]]) {
 		LOGE(@"[Assistant] Failed to open %@, invalid URL", url);
 	}
@@ -144,7 +144,7 @@ static UICompositeViewDescription *compositeDescription = nil;
     _qrCodeButton.hidden = !ENABLE_QRCODE;
 	[self resetLiblinphone:FALSE];
 	[self enableWelcomeViewButtons];
-	NSString *message = NSLocalizedString(@"I accept Belledonne Communications’ terms of use and privacy policy", nil);
+	NSString *message = NSLocalizedString(@"I accept miedifi Communications’ terms of use and privacy policy", nil);
 	NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:message attributes:@{NSForegroundColorAttributeName : [UIColor systemGrayColor]}];
 	[attributedString addAttribute:NSLinkAttributeName
 						 value:@"https://www.linphone.org/general-terms"
@@ -325,7 +325,7 @@ static UICompositeViewDescription *compositeDescription = nil;
 }
 
 - (void)enableWelcomeViewButtons {
-	BOOL acceptTerms = [LinphoneManager.instance lpConfigBoolForKey:@"accept_terms" withDefault:FALSE];
+	BOOL acceptTerms = [LinphoneManager.instance lpConfigBoolForKey:@"accept_terms" withDefault:TRUE];
 	UIImage *image = acceptTerms ? [UIImage imageNamed:@"checkbox_checked.png"] : [UIImage imageNamed:@"checkbox_unchecked.png"];
 	[_acceptButton setImage:image forState:UIControlStateNormal];
 	_gotoRemoteProvisioningButton.enabled = _gotoLinphoneLoginButton.enabled = _gotoCreateAccountButton.enabled = _gotoLinphoneSpecificFeatureWarningButton.enabled = acceptTerms;
