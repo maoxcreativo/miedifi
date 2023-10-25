@@ -29,7 +29,6 @@
                 <outlet property="linphoneLoginButton" destination="eIr-bh-JLB" id="mhf-Tc-zyb"/>
                 <outlet property="linphoneLoginView" destination="52" id="9NX-6W-50g"/>
                 <outlet property="linphoneSpecificFeatureWarningContactLink" destination="gol-XQ-ghT" id="PgK-cA-ISq"/>
-                <outlet property="linphoneSpecificFeatureWarningText" destination="gPg-U6-Op5" id="nhQ-0n-Fua"/>
                 <outlet property="linphoneSpecificFeatureWarningView" destination="D9B-vb-AvL" id="xwU-g9-CD3"/>
                 <outlet property="loginView" destination="56" id="bJH-N8-uPi"/>
                 <outlet property="phoneLabel" destination="ZSJ-Lv-n60" id="5Qi-xR-wyK"/>
@@ -1518,7 +1517,7 @@ Once it is done, come back here and click on the button.</string>
                     <color key="textColor" red="0.42667588591575623" green="0.4266631007194519" blue="0.42667034268379211" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textField hidden="YES" opaque="NO" clipsSubviews="YES" tag="104" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="cv.domain.com" borderStyle="roundedRect" adjustsFontSizeToFit="NO" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="gfr-KY-4vo" userLabel="domainField" customClass="UIAssistantTextField">
+                <textField hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="104" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="pl.domain.com" borderStyle="roundedRect" adjustsFontSizeToFit="NO" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="gfr-KY-4vo" userLabel="domainField" customClass="UIAssistantTextField">
                     <rect key="frame" x="38" y="281" width="299" height="30"/>
                     <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                     <accessibility key="accessibilityConfiguration" label="Domain"/>
@@ -1603,24 +1602,15 @@ Once it is done, come back here and click on the button.</string>
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gPg-U6-Op5">
-                    <rect key="frame" x="10" y="10" width="335" height="183"/>
-                    <string key="text">Some features require a Linphone account, such as group messaging or ephemeral messaging.  These features are hidden when you register with a third party SIP account.
-
-To enable it in a commercial project, please contact us.</string>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="https://www.linphone.org/contact" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gol-XQ-ghT">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="https://www.miedifi.com/contact" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gol-XQ-ghT">
                     <rect key="frame" x="50" y="213" width="275" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" red="0.9497097135" green="0.27055108550000001" blue="0.030769694600000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="textColor" systemColor="tintColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Uk-jk-U5R">
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Uk-jk-U5R">
                     <rect key="frame" x="110" y="259" width="155" height="34.5"/>
-                    <color key="backgroundColor" red="0.9497097135" green="0.27055108550000001" blue="0.030769694600000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="backgroundColor" systemColor="linkColor"/>
                     <accessibility key="accessibilityConfiguration" identifier="assistant_login_warning_view_skip"/>
                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <state key="normal" title="Button"/>
@@ -1633,14 +1623,10 @@ To enable it in a commercial project, please contact us.</string>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <accessibility key="accessibilityConfiguration" identifier="assistant_login_warning_view"/>
             <constraints>
-                <constraint firstItem="gol-XQ-ghT" firstAttribute="top" secondItem="gPg-U6-Op5" secondAttribute="bottom" constant="20" id="BHO-FK-4Y0"/>
                 <constraint firstAttribute="trailing" secondItem="gol-XQ-ghT" secondAttribute="trailing" constant="50" id="Cfx-sn-2oz"/>
                 <constraint firstItem="gol-XQ-ghT" firstAttribute="leading" secondItem="D9B-vb-AvL" secondAttribute="leading" constant="50" id="LJ7-Sq-QAD"/>
                 <constraint firstItem="8Uk-jk-U5R" firstAttribute="leading" secondItem="D9B-vb-AvL" secondAttribute="leading" constant="110" id="XAt-Ff-klv"/>
-                <constraint firstAttribute="trailing" secondItem="gPg-U6-Op5" secondAttribute="trailing" constant="30" id="dyE-ID-1tg"/>
-                <constraint firstItem="gPg-U6-Op5" firstAttribute="leading" secondItem="D9B-vb-AvL" secondAttribute="leading" constant="10" id="hwD-fu-8da"/>
                 <constraint firstItem="8Uk-jk-U5R" firstAttribute="top" secondItem="gol-XQ-ghT" secondAttribute="bottom" constant="25" id="lOA-SM-kEo"/>
-                <constraint firstItem="gPg-U6-Op5" firstAttribute="top" secondItem="D9B-vb-AvL" secondAttribute="top" constant="10" id="t58-Sk-dQD"/>
                 <constraint firstAttribute="trailing" secondItem="8Uk-jk-U5R" secondAttribute="trailing" constant="110" id="xCp-Uy-pdV"/>
             </constraints>
             <point key="canvasLocation" x="904.79999999999995" y="252.32383808095955"/>
@@ -1651,6 +1637,9 @@ To enable it in a commercial project, please contact us.</string>
         <image name="color_F.png" width="2" height="2"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="secondarySystemBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1663,6 +1652,9 @@ To enable it in a commercial project, please contact us.</string>
         </systemColor>
         <systemColor name="systemGrayColor">
             <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
