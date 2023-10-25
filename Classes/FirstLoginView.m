@@ -51,7 +51,7 @@ static UICompositeViewDescription *compositeDescription = nil;
 - (void)viewDidLoad {
 	[super viewDidLoad];
 	NSString *siteUrl =
-		[[LinphoneManager instance] lpConfigStringForKey:@"first_login_view_url"] ?: @"http://www.linphone.org";
+		[[LinphoneManager instance] lpConfigStringForKey:@"first_login_view_url"] ?: @"http://www.miedifi.com";
 	[_siteButton setTitle:siteUrl forState:UIControlStateNormal];
 }
 
@@ -82,7 +82,7 @@ static UICompositeViewDescription *compositeDescription = nil;
 		linphone_account_creator_unref(account_creator);
 	}
 	NSString *siteUrl =
-		[[LinphoneManager instance] lpConfigStringForKey:@"first_login_view_url"] ?: @"http://www.linphone.org";
+		[[LinphoneManager instance] lpConfigStringForKey:@"first_login_view_url"] ?: @"http://www.mieedifi.com";
 	account_creator = linphone_account_creator_new([LinphoneManager getLc], siteUrl.UTF8String);
 
 	[_usernameField
@@ -123,7 +123,7 @@ static UICompositeViewDescription *compositeDescription = nil;
 }
 
 - (void)shouldEnableNextButton {
-	BOOL invalidInputs = NO;
+	BOOL invalidInputs = YES;
 	for (UIAssistantTextField *field in @[ _usernameField, _passwordField, _domainField ]) {
 		invalidInputs |= (field.isInvalid || field.lastText.length == 0);
 	}
