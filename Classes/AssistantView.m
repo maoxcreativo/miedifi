@@ -230,7 +230,7 @@ static UICompositeViewDescription *compositeDescription = nil;
 		// Reloading Core config after won't change the account creator configuration,
 		// hence the manual reload
 		linphone_account_creator_set_domain(account_creator, [[LinphoneManager.instance lpConfigStringForKey:@"domain" inSection:@"assistant" withDefault:@"pl.miedifi.com"] UTF8String]);
-		linphone_account_creator_set_algorithm(account_creator, [[LinphoneManager.instance lpConfigStringForKey:@"algorithm" inSection:@"assistant" withDefault:@""] UTF8String]);
+		linphone_account_creator_set_algorithm(account_creator, [[LinphoneManager.instance lpConfigStringForKey:@"algorithm" inSection:@"assistant" withDefault:@"pl.miedifi.com"] UTF8String]);
 	}
 	[self changeView:nextView back:FALSE animation:TRUE];
 }
