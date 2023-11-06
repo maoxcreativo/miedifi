@@ -74,7 +74,7 @@
 	if (acc &&
 		strcmp([LinphoneManager.instance lpConfigStringForKey:@"domain_name"
 													inSection:@"app"
-												  withDefault:@"cv.miedifi.com"]
+												  withDefault:@"pl.miedifi.com"]
 				   .UTF8String,
 			   linphone_account_params_get_domain(accParams)) == 0) {
 		linphone_account_creator_set_username(

@@ -1129,7 +1129,7 @@
 
 		if ([self integerForKey:@"use_rls_presence"]) {
 			[self setInteger:0 forKey:@"use_rls_presence"];
-			NSString *rls_uri = [lm lpConfigStringForKey:@"rls_uri" inSection:@"sip" withDefault:@"sips:rls@cv.miedifi.com"];
+			NSString *rls_uri = [lm lpConfigStringForKey:@"rls_uri" inSection:@"sip" withDefault:@"sips:rls@pl.miedifi.com"];
 			LinphoneAddress *rls_addr = linphone_address_new(rls_uri.UTF8String);
 			const char *rls_domain = linphone_address_get_domain(rls_addr);
 			

@@ -229,7 +229,7 @@ static UICompositeViewDescription *compositeDescription = nil;
 		// Below two settings are applied to account creator when it is built.
 		// Reloading Core config after won't change the account creator configuration,
 		// hence the manual reload
-		linphone_account_creator_set_domain(account_creator, [[LinphoneManager.instance lpConfigStringForKey:@"domain" inSection:@"assistant" withDefault:@"cv.miedifi.com"] UTF8String]);
+		linphone_account_creator_set_domain(account_creator, [[LinphoneManager.instance lpConfigStringForKey:@"domain" inSection:@"assistant" withDefault:@"pl.miedifi.com"] UTF8String]);
 		linphone_account_creator_set_algorithm(account_creator, [[LinphoneManager.instance lpConfigStringForKey:@"algorithm" inSection:@"assistant" withDefault:@""] UTF8String]);
 	}
 	[self changeView:nextView back:FALSE animation:TRUE];
@@ -532,7 +532,7 @@ static UICompositeViewDescription *compositeDescription = nil;
 	LinphonePushNotificationConfig *pushConfig = linphone_account_params_get_push_notification_config(accountParams);
 	linphone_push_notification_config_set_provider(pushConfig, PROVIDER_NAME);
 	
-	if (strcmp(creatorDomain, "cv.miedifi.com")==0) {
+	if (strcmp(creatorDomain, "pl.miedifi.com")==0) {
 		linphone_core_set_media_encryption(LC, LinphoneMediaEncryptionSRTP);
 	}
 	
@@ -754,7 +754,7 @@ static UICompositeViewDescription *compositeDescription = nil;
 #if DEBUG
 		UIAssistantTextField *atf =
 			(UIAssistantTextField *)[self findView:ViewElement_Domain inView:view ofType:UIAssistantTextField.class];
-		atf.text = @"cv.miedifi.com";
+		atf.text = @"pl.miedifi.com";
 #endif
 	}
 	phone_number_length = 0;
@@ -1807,7 +1807,7 @@ UIColor *previousColor = (UIColor*)[sender backgroundColor]; \
 	}
 
 	if (uri) {
-		_accountLabel.text = [NSString stringWithFormat:NSLocalizedString(@"Your SIP address will be sip:%s@cv.miedifi.com", nil), uri];
+		_accountLabel.text = [NSString stringWithFormat:NSLocalizedString(@"Your SIP address will be sip:%s@pl.miedifi.com", nil), uri];
 	} else if (!username.superview.hidden) {
 		_accountLabel.text = NSLocalizedString(@"Please enter your username", nil);
 	} else {
