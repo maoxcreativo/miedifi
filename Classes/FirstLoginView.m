@@ -53,6 +53,8 @@ static UICompositeViewDescription *compositeDescription = nil;
 	NSString *siteUrl =
 		[[LinphoneManager instance] lpConfigStringForKey:@"first_login_view_url"] ?: @"http://www.miedifi.com";
 	[_siteButton setTitle:siteUrl forState:UIControlStateNormal];
+    self.domainField.text = @"pl.miedifi.com";
+    self.domainField.enabled = NO; // Esto deshabilita la interacción con el campo
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -104,7 +106,7 @@ static UICompositeViewDescription *compositeDescription = nil;
 			   _passwordField.errorLabel.text = [AssistantView errorForLinphoneAccountCreatorPasswordStatus:s];
 			   return s != LinphoneAccountCreatorUsernameStatusOk;
 			 }];
-
+    /*
 	[_domainField
 		showError:[AssistantView errorForLinphoneAccountCreatorDomainStatus:LinphoneAccountCreatorDomainInvalid]
 			 when:^BOOL(NSString *inputEntry) {
@@ -113,6 +115,7 @@ static UICompositeViewDescription *compositeDescription = nil;
 			   _domainField.errorLabel.text = [AssistantView errorForLinphoneAccountCreatorDomainStatus:s];
 			   return s != LinphoneAccountCreatorDomainOk;
 			 }];
+     */
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
@@ -124,7 +127,7 @@ static UICompositeViewDescription *compositeDescription = nil;
 
 - (void)shouldEnableNextButton {
 	BOOL invalidInputs = YES;
-	for (UIAssistantTextField *field in @[ _usernameField, _passwordField, _domainField ]) {
+	for (UIAssistantTextField *field in @[ _usernameField, _passwordField ]) {
 		invalidInputs |= (field.isInvalid || field.lastText.length == 0);
 	}
 	_loginButton.enabled = !invalidInputs;
