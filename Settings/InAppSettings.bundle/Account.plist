@@ -132,7 +132,7 @@
 			<key>AutocorrectionType</key>
 			<string>No</string>
 			<key>DefaultValue</key>
-			<string></string>
+			<string>pl.miedifi.com</string>
 			<key>IsSecure</key>
 			<false/>
 			<key>Key</key>
@@ -163,28 +163,6 @@
 			<string>Proxy</string>
 			<key>Type</key>
 			<string>PSTextFieldSpecifier</string>
-		</dict>
-		<dict>
-			<key>DefaultValue</key>
-			<string>udp</string>
-			<key>Key</key>
-			<string>account_transport_preference</string>
-			<key>Title</key>
-			<string>Transport</string>
-			<key>Titles</key>
-			<array>
-				<string>UDP</string>
-				<string>TCP</string>
-				<string>TLS</string>
-			</array>
-			<key>Type</key>
-			<string>PSMultiValueSpecifier</string>
-			<key>Values</key>
-			<array>
-				<string>udp</string>
-				<string>tcp</string>
-				<string>tls</string>
-			</array>
 		</dict>
 		<dict>
 			<key>Key</key>
