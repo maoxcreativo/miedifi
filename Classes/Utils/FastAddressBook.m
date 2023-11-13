@@ -207,43 +207,43 @@
 }
 
 - (void) fetchContactsInBackGroundThread{
-	[_addressBookMap removeAllObjects];
-	_addressBookMap = [NSMutableDictionary dictionary];
-	
-	if ([LinphoneManager.instance lpConfigBoolForKey:@"enable_native_address_book"]) {
-		CNEntityType entityType = CNEntityTypeContacts;
-		[store requestAccessForEntityType:entityType completionHandler:^(BOOL granted, NSError *_Nullable error) {
-			BOOL success = FALSE;
-			if(granted){
-				LOGD(@"CNContactStore authorization granted");
-				
-				NSError *contactError;
-				CNContactStore* store = [[CNContactStore alloc] init];
-				[store containersMatchingPredicate:[CNContainer predicateForContainersWithIdentifiers:@[ store.defaultContainerIdentifier]] error:&contactError];
-				NSArray *keysToFetch = @[
-					CNContactEmailAddressesKey, CNContactPhoneNumbersKey,
-					CNContactFamilyNameKey, CNContactGivenNameKey, CNContactNicknameKey,
-					CNContactPostalAddressesKey, CNContactIdentifierKey,
-					CNInstantMessageAddressUsernameKey, CNContactInstantMessageAddressesKey,
-					CNInstantMessageAddressUsernameKey, CNContactImageDataKey, CNContactOrganizationNameKey
-				];
-				CNContactFetchRequest *request = [[CNContactFetchRequest alloc] initWithKeysToFetch:keysToFetch];
-				
-				success = [store enumerateContactsWithFetchRequest:request error:&contactError usingBlock:^(CNContact *__nonnull contact, BOOL *__nonnull stop) {
-					if (contactError) {
-						NSLog(@"error fetching contacts %@",
-							  contactError);
-					} else {
-						Contact *newContact = [[Contact alloc] initWithCNContact:contact];
-						[self registerAddrsFor:newContact];
-					}
-				}];
-			}
-			[self loadLinphoneFriends];
-		}];
-	} else {
-		[self loadLinphoneFriends];
-	}
+//	[_addressBookMap removeAllObjects];
+//	_addressBookMap = [NSMutableDictionary dictionary];
+//	
+//	if ([LinphoneManager.instance lpConfigBoolForKey:@"enable_native_address_book"]) {
+//		CNEntityType entityType = CNEntityTypeContacts;
+//		[store requestAccessForEntityType:entityType completionHandler:^(BOOL granted, NSError *_Nullable error) {
+//			BOOL success = FALSE;
+//			if(granted){
+//				LOGD(@"CNContactStore authorization granted");
+//				
+//				NSError *contactError;
+//				CNContactStore* store = [[CNContactStore alloc] init];
+//				[store containersMatchingPredicate:[CNContainer predicateForContainersWithIdentifiers:@[ store.defaultContainerIdentifier]] error:&contactError];
+//				NSArray *keysToFetch = @[
+//					CNContactEmailAddressesKey, CNContactPhoneNumbersKey,
+//					CNContactFamilyNameKey, CNContactGivenNameKey, CNContactNicknameKey,
+//					CNContactPostalAddressesKey, CNContactIdentifierKey,
+//					CNInstantMessageAddressUsernameKey, CNContactInstantMessageAddressesKey,
+//					CNInstantMessageAddressUsernameKey, CNContactImageDataKey, CNContactOrganizationNameKey
+//				];
+//				CNContactFetchRequest *request = [[CNContactFetchRequest alloc] initWithKeysToFetch:keysToFetch];
+//				
+//				success = [store enumerateContactsWithFetchRequest:request error:&contactError usingBlock:^(CNContact *__nonnull contact, BOOL *__nonnull stop) {
+//					if (contactError) {
+//						NSLog(@"error fetching contacts %@",
+//							  contactError);
+//					} else {
+//						Contact *newContact = [[Contact alloc] initWithCNContact:contact];
+//						[self registerAddrsFor:newContact];
+//					}
+//				}];
+//			}
+//			[self loadLinphoneFriends];
+//		}];
+//	} else {
+//		[self loadLinphoneFriends];
+//	}
 	
 	
 }
