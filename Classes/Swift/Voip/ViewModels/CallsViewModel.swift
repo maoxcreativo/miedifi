@@ -181,7 +181,7 @@ class CallsViewModel {
 
 			let firstCall = Core.get().calls.filter {$0.state != .Error && $0.state != .End && $0.state != .Released}.first
 			if (firstCall != nil && currentCallData.value??.call.getCobject != firstCall?.getCobject) {
-				Log.i("[Calls] Using \(firstCall?.callLog?.callId) as \"current\" call")
+                Log.i("[Calls] Using \(String(describing: firstCall?.callLog?.callId)) as \"current\" call")
 				callToUse = firstCall
 			}
 		}
@@ -193,7 +193,7 @@ class CallsViewModel {
 		
 		let firstToUse = callsData.value?.filter{$0.call.getCobject == callToUse.getCobject}.first
 		if (firstToUse != nil) {
-			Log.i("[Calls] Updating current call to : \(firstToUse?.call)")
+            Log.i("[Calls] Updating current call to : \(String(describing: firstToUse?.call))")
 			currentCallData.value = firstToUse
 		} else {
 			Log.w("[Calls] Call not found in calls data list, shouldn't happen! currentCallData is \(callToUse)")
